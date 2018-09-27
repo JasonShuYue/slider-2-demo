@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.window {
+    width: 480px;
+    height: 360px;
+    margin: 20px auto 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+.window img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+}
+
+.window img.current {
+    transform: translateX(0);
+    z-index: 1;
+}
+
+.window img.left {
+    transform: translateX(-100%);
+    z-index: 1;
+}
+
+.window img.right {
+    transform: translateX(100%);
+}
